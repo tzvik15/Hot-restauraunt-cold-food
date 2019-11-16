@@ -8,6 +8,7 @@ var PORT = process.env.PORT || 3000;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static("public"));
 
 tableArr=[];
 waitArr=[];
@@ -21,7 +22,7 @@ app.get("/", function(req, res) {
   });
 
   app.get("/mres", function(req, res) {
-    res.sendFile(path.join(__dirname, "mres.html"));
+    res.sendFile(path.join(__dirname, "/public/mres.html"));
   });
 
   app.get("/vtable", function(req, res) {
