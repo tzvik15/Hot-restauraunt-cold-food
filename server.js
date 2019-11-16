@@ -18,7 +18,7 @@ waitArr=[];
 
 
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "/public/index.html"));
   });
 
   app.get("/mres", function(req, res) {
@@ -26,7 +26,7 @@ app.get("/", function(req, res) {
   });
 
   app.get("/vtable", function(req, res) {
-    res.sendFile(path.join(__dirname, "vtable.html"));
+    res.sendFile(path.join(__dirname, "/public/vtable.html"));
   });
 
   app.get("/api/tables", function(req, res) {

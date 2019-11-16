@@ -21,8 +21,8 @@
         <h1 class="display-4"><i class="fas fa-dragon">Dragon - Restaurant</i></h1>
         <hr class="my-4">
         <p class="lead">We only have 5 tables! Book your seat before they all are gone!</p>
-        <a class="btn btn-primary btn-lg" href="vtable.html" role="button" id="b1"><i class="fas fa-list-alt">View tables</i></a>
-        <a href="index.html" id="b3"><i class="fas fa-igloo" id="b3"></i></a>
+        <a class="btn btn-primary btn-lg" href="../vtable.html" role="button" id="b1"><i class="fas fa-list-alt">View tables</i></a>
+        <a href="../index.html" id="b3"><i class="fas fa-igloo" id="b3"></i></a>
     </div>
     <div class="container" id="wrapper">
         <div class="container" id="tr">
@@ -53,26 +53,6 @@
                     </form>
             <button id="submit">Submit</button>
     </div>
-    <!-- <script >
-    
-    $("#submit").on("click", function(event) {
-    event.preventDefault();
-    var newRes = {
-      name: $("#name").val().trim(),
-      phone: $("#pnumber").val().trim(),
-      email: $("#email").val().trim(),
-      ID: $("#id").val().trim()
-    };
-    console.log(newRes)
-    // Question: What does this code do??
-    $.post("/api/tables", newRes)
-      .then(function(data) {
-        alert("Thank you for your desire to visit our Dragon restauraunt. Please wait an indefinate time in cyberspace and maybe we will serve you. yay.");
-      });
-   });
-    
-    
-    </script> -->
     <script src="./script.js" type = "application/javascript"></script>
 </body>
 
