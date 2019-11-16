@@ -20,3 +20,9 @@
 #wrapper {
     background-color: wheat;
 }
+
+.table{
+    background-color: azure;
+    font-size: 28px;
+    font-weight: bold;
+}
