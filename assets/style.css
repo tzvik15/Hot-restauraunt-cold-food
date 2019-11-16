@@ -1,0 +1,9 @@
+.jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgb(245, 12, 70) ;
+}
+
+#b1, #b2 {
+    background-color: gold;
+}
