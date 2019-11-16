@@ -2,8 +2,21 @@
     padding-left: 60px;
     padding-right: 60px;
     background-color: rgb(245, 12, 70) ;
+    align-self: auto;
+    margin: 60px;
+    text-align: center;
 }
 
-#b1, #b2 {
+#b1, #b2, #b3 {
     background-color: gold;
+}
+#b3 {
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 28px;
+}
+#wrapper {
+    background-color: wheat;
 }
