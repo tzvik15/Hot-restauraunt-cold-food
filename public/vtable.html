@@ -20,20 +20,51 @@
         <h1 class="display-4"><i class="fas fa-dragon">Dragon - Restaurant</i></h1>
         <hr class="my-4">
         <p class="lead">We only have 5 tables! Book your seat before they all are gone!</p>
-        <a class="btn btn-primary btn-lg" href="public/mres.html" role="button" id="b2"><i class="fas fa-table">Make reservation</i></a>
+        <a class="btn btn-primary btn-lg" href="mres.html" role="button" id="b2"><i class="fas fa-table">Make reservation</i></a>
         <a href="index.html" id="b3"><i class="fas fa-igloo" id="b3"></i></a>
     </div>
 
     <div  class="container">
-        <p>Current Reservation</p>
+        <p id="current">Current Reservation</p>
 
     </div>
     
     <div class="container">
-        <p>Waiting list</p>
+        <p id="wait">Waiting list</p>
+        
 
 
     </div>
 
+
+
+<script>
+$.ajax({
+    url: "http://localhost:3000/api/tables",
+    method: "GET"
+}).then(function(response){
+for (let i=0; i<response.length; i++){
+    let newDiv = $("<div>");
+    let p1 = $("<p>")
+    p1.text(response[i].name);
+    newDiv.append(p1);
+   $("#current").append(newDiv);
+}})
+
+$.ajax({
+    url: "http://localhost:3000/api/wait",
+    method: "GET"
+}).then(function(response){
+for (let i=0; i<response.length; i++){
+    let newDiv = $("<div>");
+    let p1 = $("<p>")
+    p1.text(response[i].name);
+    newDiv.append(p1);
+   $("#wait").append(newDiv);
+}})
+</script>
+
+
+</body>
 
 </html>
