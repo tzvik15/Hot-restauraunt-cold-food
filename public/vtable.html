@@ -45,7 +45,7 @@ $.ajax({
 }).then(function(response){
 for (let i=0; i<response.length; i++){
     let newDiv = $("<div>");
-    let p1 = $("<p>")
+    let p1 = $("<p>").addClass('table')
     p1.text(response[i].name);
     newDiv.append(p1);
    $("#current").append(newDiv);
@@ -56,8 +56,8 @@ $.ajax({
     method: "GET"
 }).then(function(response){
 for (let i=0; i<response.length; i++){
-    let newDiv = $("<div>");
-    let p1 = $("<p>")
+    let newDiv = $("<div>")
+    let p1 = $("<p>").addClass('table');
     p1.text(response[i].name);
     newDiv.append(p1);
    $("#wait").append(newDiv);
