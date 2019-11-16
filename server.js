@@ -50,7 +50,7 @@ app.get("/", function(req, res) {
     tableArr.push(newRes);
   } else waitArr.push(newRes);
 
-    console.log(tableArr)
+    console.log(newRes)
 
     res.json(newRes);
   });
