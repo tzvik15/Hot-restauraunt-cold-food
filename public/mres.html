@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css" ; <script src="https://code.jquery.com/jquery-3.4.1.js"
+    <link rel="stylesheet" href="assets/style.css" /> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
     </script>
 </head>
@@ -24,7 +25,7 @@
     </div>
     <div class="container">
         <p>Table Reservation</p>
-        <form>
+        <form >
             <div class="form-group">
                 <label for="exampleFormControlInput1">Name</label>
                 <input class="form-control" id="name">
@@ -48,6 +49,27 @@
                     </form>
             <button id="submit">Submit</button>
     </div>
+    <!-- <script >
+    
+    $("#submit").on("click", function(event) {
+    event.preventDefault();
+    var newRes = {
+      name: $("#name").val().trim(),
+      phone: $("#pnumber").val().trim(),
+      email: $("#email").val().trim(),
+      ID: $("#id").val().trim()
+    };
+    console.log(newRes)
+    // Question: What does this code do??
+    $.post("/api/tables", newRes)
+      .then(function(data) {
+        alert("Thank you for your desire to visit our Dragon restauraunt. Please wait an indefinate time in cyberspace and maybe we will serve you. yay.");
+      });
+   });
+    
+    
+    </script> -->
+    <script src="./script.js" type = "application/javascript"></script>
 </body>
 
 </html>
