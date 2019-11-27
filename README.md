@@ -13,3 +13,7 @@ On the back end, the app has a working server that can handle GET and POST reque
 #### Structure, files, and modules
 
 This app works from the server.js file, the html files are served from within the "public" folder, as is the main CSS stylesheet. This app uses JQuery, Bootstrap CSS, FontAwesome. Express node module.
+
+### Deployed URL
+
+https://sheltered-bayou-19458.herokuapp.com/
