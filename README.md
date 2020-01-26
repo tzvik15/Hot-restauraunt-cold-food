@@ -1,5 +1,7 @@
 # Hot-restauraunt-cold-food
 
+![](restFull.jpg)
+
 ## Description
 
 This is a full stack app. It allows the user to input their details to make a reservation for a fake restauraunt. The details are POSTed to the server and the API is populated. The guest list and wait list are dynamically populated and can be seen in the corresponding page. The raw API data can also be viewed through links.
